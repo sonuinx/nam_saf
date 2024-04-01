@@ -14,3 +14,8 @@ class Item(ItemBase):
 
     class Config:
         orm_mode = True
+        
+class User(BaseModel):
+    username: str
+    email: str
+    hashed_password: str

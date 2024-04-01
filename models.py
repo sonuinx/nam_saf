@@ -9,4 +9,13 @@ class ItemModel(Base):
     description = Column(String, index=True, nullable=True)
     price = Column(Float, index=True)
     tax = Column(Float, index=True, nullable=True)
+
+class UserDB(Base):
+    __tablename__ = "users"
+
+    id = Column(Integer, primary_key=True, index=True)
+    username = Column(String, unique=True, index=True)
+    email = Column(String, unique=True, index=True)
+    hashed_password = Column(String)
+
 Base.metadata.create_all(bind=engine)
