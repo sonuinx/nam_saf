@@ -9,10 +9,19 @@ from fastapi.responses import JSONResponse
 from models import UserDB
 from passlib.context import CryptContext
 from schema import User
+from fastapi.middleware.cors import CORSMiddleware
 
 base_path = os.path.dirname(__file__)
 app = FastAPI()
+allowed_origins = ["*"]
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=allowed_origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 db_users = []
 
 
@@ -115,13 +124,16 @@ def verify_password(plain_password, hashed_password):
 # User registration
 def register_user(user: User):
     hashed_password = get_password_hash(user.hashed_password)
-    db_user = UserDB(username=user.username, email=user.email, hashed_password=hashed_password)
+    db_user = UserDB(
+        username=user.username, email=user.email, hashed_password=hashed_password
+    )
     db = SessionLocal()
     db.add(db_user)
     db.commit()
     db.refresh(db_user)
     db.close()
     return db_user
+
 
 # User login
 def authenticate_user(username: str, password: str):
@@ -135,6 +147,7 @@ def authenticate_user(username: str, password: str):
         )
     db.close()
     return user
+
 
 # User registration endpoint
 @app.post("/register/")
