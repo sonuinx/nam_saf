@@ -215,6 +215,10 @@ async def get_asset(uid: str = Query(..., title="Asset UID")):
     try:
         asset = get_asset_by_uid(uid)
         asset = replace_nan_with_none(asset)
+        for key in list(asset.keys()):
+            if " " in key:
+                new_key = key.replace(" ", "_")
+                asset[new_key] = asset.pop(key)
         return asset
     except HTTPException as e:
         raise e
