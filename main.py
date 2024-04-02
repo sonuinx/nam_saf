@@ -10,7 +10,7 @@ from models import UserDB
 from passlib.context import CryptContext
 from schema import User
 from fastapi.middleware.cors import CORSMiddleware
-
+import json
 base_path = os.path.dirname(__file__)
 app = FastAPI()
 allowed_origins = ["*"]
@@ -36,15 +36,20 @@ async def read_assets_data():
             df_cleaned["year"] = df_cleaned["year"].astype("Int64")
             # Convert DataFrame to a list of dictionaries
             sheet_data = df_cleaned.to_dict(orient="records")
-
+            
             # Replace spaces with underscores in keys
             for item in sheet_data:
                 for key in list(item.keys()):
                     if ' ' in key:
                         new_key = key.replace(' ', '_')
                         item[new_key] = item.pop(key)
-
+            # Replace None or NaN values with None
+            for item in sheet_data:
+                for k, v in item.items():
+                    if v is None or pd.isna(v):
+                        item[k] = None
             response_data = {"data": sheet_data}
+
         return JSONResponse(content=response_data, status_code=200)
 
     except Exception as e:
