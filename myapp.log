@@ -1,0 +1,338 @@
+nohup: ignoring input
+/home/namsaf_admin/env/lib/python3.10/site-packages/pydantic/_internal/_config.py:322: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+INFO:     Started server process [634892]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8085 (Press CTRL+C to quit)
+INFO:     152.58.34.211:37460 - "GET /docs HTTP/1.1" 200 OK
+INFO:     152.58.34.211:37460 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     152.58.34.211:35438 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:62667 - "GET /docs HTTP/1.1" 200 OK
+INFO:     152.58.223.231:62667 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     152.58.223.231:62666 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:62683 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:62808 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:62808 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:62809 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:19868 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:62892 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:62918 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:62919 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:62947 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:62953 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:62948 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:62948 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:63003 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:63040 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:63308 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:63308 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:63503 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:63504 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:50701 - "POST /projects/ HTTP/1.1" 422 Unprocessable Entity
+INFO:     152.58.223.231:53076 - "OPTIONS /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:53079 - "POST /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:53201 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:53279 - "POST /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:53294 - "POST /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:53301 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:53354 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:53476 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:53478 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:53502 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:54654 - "OPTIONS /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:54654 - "POST /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:54656 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     103.240.170.87:53729 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     152.58.223.231:38662 - "POST /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:55211 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:55371 - "POST /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:55385 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:55418 - "POST /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:55424 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:55550 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:55607 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:55607 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:55607 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:55607 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:55608 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:55643 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:55715 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:55715 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:55715 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:55715 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:55715 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:44974 - "OPTIONS /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:55783 - "POST /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:55783 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:55981 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:56138 - "OPTIONS /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:56139 - "POST /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:56139 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:56152 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:56186 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:56188 - "POST /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:56188 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:56151 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:56275 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:56275 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:56277 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:56428 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:56430 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:56468 - "POST /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:56474 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:56494 - "POST /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:56495 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:56550 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:56550 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:56550 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:56550 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:56790 - "POST /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:56790 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:56825 - "OPTIONS /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:56826 - "POST /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:56826 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.223.231:56843 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.198.99:57668 - "OPTIONS /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.198.99:57669 - "POST /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:54258 - "GET /docs HTTP/1.1" 200 OK
+INFO:     152.58.215.135:54258 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     152.58.215.135:54258 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.215.135:55274 - "OPTIONS /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:55274 - "POST /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:55296 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     103.240.170.87:53938 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.215.135:55470 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:55470 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:55470 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     103.240.170.87:53951 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:23460 - "GET /docs HTTP/1.1" 200 OK
+INFO:     152.58.215.135:23460 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     152.58.215.135:23460 - "GET /assets/ HTTP/1.1" 200 OK
+/home/namsaf_admin/nam_saf/excel_controller.py:23: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  df = pd.concat([df, new_df], ignore_index=True)
+INFO:     103.240.170.87:20658 - "POST /assets/ HTTP/1.1" 200 OK
+INFO:     103.240.170.87:35549 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:56065 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:56065 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:56116 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:56117 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:56116 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:56116 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:56116 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:56222 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:56276 - "OPTIONS /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:56276 - "POST /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:56276 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:14488 - "OPTIONS /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:14488 - "POST /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:14488 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:56308 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:56308 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:56382 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:56382 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:56382 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:56382 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:56436 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:56436 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:56436 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:56436 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:56427 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:56487 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:56487 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:56488 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:56593 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:56599 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:56600 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:57076 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:57483 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:57580 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:57700 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:50568 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:50614 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:50570 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:50885 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:50886 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:50975 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:51042 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.215.135:51042 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:54339 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:54374 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:54401 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:54407 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:54420 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:54483 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:54635 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:54685 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:54738 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:54739 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:55310 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:55311 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:55363 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:55467 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:55638 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:55993 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:56008 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:56293 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:56424 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:56451 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:46750 - "GET /assets/ HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     152.58.226.33:57330 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:57331 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:57576 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:57640 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:58326 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:58327 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:58378 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:58411 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:58522 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:58523 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:58639 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:58639 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:58659 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:58915 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:58981 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:58982 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:59034 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:59036 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:59135 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:59136 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:59166 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:59167 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:59252 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:59495 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:59536 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:42244 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:59631 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:59856 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60023 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60076 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60110 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60111 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60112 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60200 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60234 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60235 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60258 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60367 - "OPTIONS /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60368 - "POST /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60420 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60421 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60504 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60503 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60505 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60503 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60503 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60523 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60523 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60524 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60524 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60524 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60593 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60594 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60593 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60595 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60595 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60595 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60595 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60595 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60628 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60629 - "OPTIONS /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60629 - "POST /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60629 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60641 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60641 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60641 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60663 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60663 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60922 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60923 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:60924 - "GET /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:61362 - "OPTIONS /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:61362 - "POST /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:61649 - "POST /assets/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:61992 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.33:61992 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:62004 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.33:62062 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.33:62063 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:62135 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.33:62136 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.33:62135 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.33:62167 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.33:62169 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50020 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50029 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50032 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.82:50144 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50144 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50158 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.82:50159 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50159 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50171 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.82:53924 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50173 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.82:50189 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50189 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50200 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.82:50201 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50202 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50222 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.82:50223 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50223 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.82:50222 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50239 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.82:50240 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50242 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50242 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50242 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50242 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50242 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.82:50252 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50267 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.82:50268 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50269 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.82:50292 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50306 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.82:50307 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:40452 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.82:40452 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:40452 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:40452 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50396 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50410 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.82:50411 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50424 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50425 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.82:50424 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50438 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.82:50439 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50439 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50439 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50439 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50439 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50439 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50439 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50462 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.82:50463 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50472 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.82:50473 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50474 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.82:50474 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50474 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.82:50474 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.82:50474 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.82:50487 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.82:50506 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.82:50557 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.82:50573 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.82:50580 - "GET /portfolio/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50580 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.82:50581 - "GET /projects/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50589 - "GET /assets/ HTTP/1.1" 500 Internal Server Error
+INFO:     152.58.226.82:50657 - "POST /register/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:50658 - "POST /login/?username=Superuser&password=Admin%401234 HTTP/1.1" 200 OK
+INFO:     152.58.226.82:51017 - "OPTIONS /login/ HTTP/1.1" 200 OK
+INFO:     152.58.226.82:51017 - "POST /login/ HTTP/1.1" 422 Unprocessable Entity
