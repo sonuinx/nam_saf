@@ -4,13 +4,13 @@ from typing import Dict
 import pandas as pd
 from database import SessionLocal
 from excel_controller import append_record_to_excel
-from fastapi import FastAPI, HTTPException, status
+from fastapi import FastAPI, HTTPException, status, Query
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from models import UserDB
 from passlib.context import CryptContext
 from schema import User
-from fastapi.middleware.cors import CORSMiddleware
-import json
+import math
 base_path = os.path.dirname(__file__)
 app = FastAPI()
 allowed_origins = ["*"]
@@ -36,12 +36,12 @@ async def read_assets_data():
             df_cleaned["year"] = df_cleaned["year"].astype("Int64")
             # Convert DataFrame to a list of dictionaries
             sheet_data = df_cleaned.to_dict(orient="records")
-            
+
             # Replace spaces with underscores in keys
             for item in sheet_data:
                 for key in list(item.keys()):
-                    if ' ' in key:
-                        new_key = key.replace(' ', '_')
+                    if " " in key:
+                        new_key = key.replace(" ", "_")
                         item[new_key] = item.pop(key)
             # Replace None or NaN values with None
             for item in sheet_data:
@@ -87,10 +87,9 @@ async def read_projects_data():
             # Replace spaces with underscores in keys
             for item in sheet_data:
                 for key in list(item.keys()):
-                    if ' ' in key:
-                        new_key = key.replace(' ', '_')
+                    if " " in key:
+                        new_key = key.replace(" ", "_")
                         item[new_key] = item.pop(key)
-
 
             response_data = {"data": sheet_data}
         return JSONResponse(content=response_data, status_code=200)
@@ -112,10 +111,9 @@ async def read_portfolio_data():
             # Replace spaces with underscores in keys
             for item in sheet_data:
                 for key in list(item.keys()):
-                    if ' ' in key:
-                        new_key = key.replace(' ', '_')
+                    if " " in key:
+                        new_key = key.replace(" ", "_")
                         item[new_key] = item.pop(key)
-
 
             response_data = {"data": sheet_data}
         return JSONResponse(content=response_data, status_code=200)
@@ -187,3 +185,38 @@ def register(user: User):
 def login(username: str, password: str):
     user = authenticate_user(username, password)
     return {"message": "Login successful", "user_id": user.id}
+
+
+# Function to retrieve asset by UID from Excel sheet
+def get_asset_by_uid(uid: str):
+    try:
+        # Read data from Excel file
+        df = pd.read_excel(f"{base_path}/excel_files/Assets_A.xlsx", sheet_name="steel")
+
+        # Search for asset with given UID
+        asset = df[df["uid"] == uid].to_dict(orient="records")
+
+        if not asset:
+            raise HTTPException(status_code=404, detail="Asset not found")
+
+        return asset[0]  # Return first match (assuming UID is unique)
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+def replace_nan_with_none(asset):
+    for key, value in asset.items():
+        if isinstance(value, float) and math.isnan(value):
+            asset[key] = None
+    return asset
+
+@app.get("/get-asset/")
+async def get_asset(uid: str = Query(..., title="Asset UID")):
+    try:
+        asset = get_asset_by_uid(uid)
+        asset = replace_nan_with_none(asset)
+        return asset
+    except HTTPException as e:
+        raise e
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
