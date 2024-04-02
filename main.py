@@ -37,6 +37,13 @@ async def read_assets_data():
             # Convert DataFrame to a list of dictionaries
             sheet_data = df_cleaned.to_dict(orient="records")
 
+            # Replace spaces with underscores in keys
+            for item in sheet_data:
+                for key in list(item.keys()):
+                    if ' ' in key:
+                        new_key = key.replace(' ', '_')
+                        item[new_key] = item.pop(key)
+
             response_data = {"data": sheet_data}
         return JSONResponse(content=response_data, status_code=200)
 
@@ -72,6 +79,13 @@ async def read_projects_data():
             df_cleaned = df.where(pd.notna(df), None)
             # Convert DataFrame to a list of dictionaries
             sheet_data = df_cleaned.to_dict(orient="records")
+            # Replace spaces with underscores in keys
+            for item in sheet_data:
+                for key in list(item.keys()):
+                    if ' ' in key:
+                        new_key = key.replace(' ', '_')
+                        item[new_key] = item.pop(key)
+
 
             response_data = {"data": sheet_data}
         return JSONResponse(content=response_data, status_code=200)
@@ -90,6 +104,13 @@ async def read_portfolio_data():
             df_cleaned = df.where(pd.notna(df), None)
             # Convert DataFrame to a list of dictionaries
             sheet_data = df_cleaned.to_dict(orient="records")
+            # Replace spaces with underscores in keys
+            for item in sheet_data:
+                for key in list(item.keys()):
+                    if ' ' in key:
+                        new_key = key.replace(' ', '_')
+                        item[new_key] = item.pop(key)
+
 
             response_data = {"data": sheet_data}
         return JSONResponse(content=response_data, status_code=200)
