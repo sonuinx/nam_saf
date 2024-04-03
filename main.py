@@ -4,13 +4,14 @@ from typing import Dict
 import pandas as pd
 from database import SessionLocal
 from excel_controller import append_record_to_excel
-from fastapi import FastAPI, HTTPException, status, Query
+from fastapi import FastAPI, HTTPException, status, Query, File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from models import UserDB
 from passlib.context import CryptContext
 from schema import User
 import math
+
 base_path = os.path.dirname(__file__)
 app = FastAPI()
 allowed_origins = ["*"]
@@ -204,11 +205,13 @@ def get_asset_by_uid(uid: str):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+
 def replace_nan_with_none(asset):
     for key, value in asset.items():
         if isinstance(value, float) and math.isnan(value):
             asset[key] = None
     return asset
+
 
 @app.get("/get-asset/")
 async def get_asset(uid: str = Query(..., title="Asset UID")):
@@ -222,5 +225,18 @@ async def get_asset(uid: str = Query(..., title="Asset UID")):
         return asset
     except HTTPException as e:
         raise e
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/upload-excel/")
+async def upload_excel_file(file: UploadFile = File(...)):
+    try:
+        # Save the uploaded file to the folder
+        file_path = os.path.join(f"{base_path}/excel_files", file.filename)
+        with open(file_path, "wb") as buffer:
+            buffer.write(await file.read())
+
+        return {"message": f"File '{file.filename}' uploaded successfully"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
